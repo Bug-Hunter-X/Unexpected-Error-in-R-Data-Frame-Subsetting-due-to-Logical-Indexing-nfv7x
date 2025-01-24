@@ -1,0 +1,2 @@
+# R Data Frame Subsetting Bug
+This repository demonstrates a subtle bug in R related to data frame subsetting using logical indexing and the behavior of logical AND.  The bug arises from the fact that R does not short-circuit the logical AND operator, leading to unexpected errors when a condition might access elements outside vector bounds. The solution highlights a safer way to perform this type of subsetting to avoid this problem.  This is a common gotcha for R users, highlighting the importance of careful conditional logic when dealing with data manipulation.
